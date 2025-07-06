@@ -1,0 +1,19 @@
+{
+  "name": "rent-management-system",
+  "version": "1.0.0",
+  "description": "Full-stack rent management system with React frontend and Node.js backend",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd Backend && npm run dev",
+    "dev:frontend": "cd Frontend && npm run dev",
+    "install:all": "npm install && cd Backend && npm install && cd ../Frontend && npm install",
+    "build": "cd Frontend && npm run build",
+    "start": "cd Backend && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": ["rent", "management", "react", "nodejs", "mongodb"],
+  "author": "",
+  "license": "MIT"
+} 
